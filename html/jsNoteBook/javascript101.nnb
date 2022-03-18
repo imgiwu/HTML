@@ -1,0 +1,127 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# JavaScript 101"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Variable Declaration"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "/* ES6 */\nlet carSpeed = 60\ncarSpeed = 80\nconst PI = 3.14\nPI = 6.14\nlet car\n\n/* Prior ES6 */\nvar volume = 100\nvar volume = 200"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Variables comments\n- Don't declare the same name twice or more\n- Follow camelCase"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Data types"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "**Primitive Types**"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const fname = 'John Doe' // string \nconst age = 50 // number\nconst largeNumber = 9007199254740991n\nconst earthPopulation = largeNumber * 2n // BigInt\nconst isDark = true  // Boolean\nconst isLight = false // Boolean\nconst unique = Symbol('secret') // Symbol that is unique in scope\nconst darkMatter = undefined // undefined value\nconst vacuum = null // null\nconsole.log(typeof unique)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "symbol",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "**Non Primitive Types**"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const userNames = [120 , 120, 'William D', true, null, undefined]\nconsole.log (6 in userNames)\n\nconst fullName = 'John Doe'\nconst dateOfBirth = '10/10/2010'\nconst licenseId = 'abc-589'\nconst photoUrl = 'https://www.photoser.com'\nconst key = Symbol('ObjKey')\n\nconst driversLicense = {\n\tfullName : 'John Doe',\n\tdateOfBirth : '10/10/2010',\n\tlicenseId : 'abc - 124',\n\tphotoUrl: 'https://www.photoser.com',\n\t'full address': '123 street sw',\n\t[key]: 'someKey'\n}\n\ndriversLicense.cardSize = '10 x 20 cm'\n\n/* Object \n- Array (list)\n- Object\n- Set\n- Map\n- Functions\n- Classes\n*/"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "false",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "\u001b[32m'10 x 20 cm'\u001b[39m"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Operators"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const fname = 'John'\nconst lname = 'Doe'\nconst uglyConcatFullName = fname +' '+ lname\nconst fullName = `Hello, ${fname} ${lname}\nThank you for joining our group\n`\nconst stringExample = 'John \\n Doe'\n\nconst x = 1\nconst z = 0\nconst y = x / z\n// number 2 plus the numerical representation of '2' = 50 => 52\n// string 2 plus string 2\nconsole.log ( y === Infinity)\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "true",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
